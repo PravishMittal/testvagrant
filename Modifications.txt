@@ -1,0 +1,7 @@
+//Fixed the errors
+//Used POM, created page factory
+//Used Cucumber, created feature files
+//Used Extent Reports, added the scenarios in HTML report
+//Added testing.xml file, running the code through XML
+//Created Test runner file, used various TestNG annotations
+//Created a common function class, we can use commonly used methods in this
