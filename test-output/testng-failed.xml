@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [CodingRound]" parallel="none">
+  <test name="Regression Test cases(failed)" parallel="none">
+    <classes>
+      <class name="codingRound.HotelBookingTest">
+        <methods>
+          <include name="tearDownClass"/>
+          <include name="feature"/>
+        </methods>
+      </class> <!-- codingRound.HotelBookingTest -->
+      <class name="codingRound.FlightBookingTest">
+        <methods>
+          <include name="tearDownClass"/>
+          <include name="feature"/>
+        </methods>
+      </class> <!-- codingRound.FlightBookingTest -->
+      <class name="codingRound.CommonFunctions">
+        <methods>
+          <include name="abcd"/>
+          <include name="tearDown"/>
+          <include name="setUpClass"/>
+          <include name="tearDownClass"/>
+          <include name="feature" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- codingRound.CommonFunctions -->
+      <class name="codingRound.TestRunner">
+        <methods>
+          <include name="tearDownClass"/>
+          <include name="feature"/>
+        </methods>
+      </class> <!-- codingRound.TestRunner -->
+      <class name="codingRound.SignInTest">
+        <methods>
+          <include name="tearDownClass"/>
+          <include name="feature"/>
+        </methods>
+      </class> <!-- codingRound.SignInTest -->
+    </classes>
+  </test> <!-- Regression Test cases(failed) -->
+</suite> <!-- Failed suite [CodingRound] -->
