@@ -6,15 +6,21 @@ import org.openqa.selenium.support.FindBy;
 public class HotelBookingPage {
 
 	@FindBy(xpath = "//a[contains(text(),'Hotels')]")
-	public WebElement hotelLink;
+	public WebElement lnkHotel;
 
 	@FindBy(id = "Tags")
-	public WebElement localityTextBox;
+	public WebElement txtLocality;
 
 	@FindBy(id = "SearchHotelsButton")
-	public WebElement searchButton;
+	public WebElement btnSearch;
 
 	@FindBy(id = "travellersOnhome")
-	public WebElement travellerSelection;
+	public WebElement ddlTravellerSelection;
+	
+	@FindBy(xpath = "//label[@title='Check-in date']//..//..//input[@data-datepicker='click']")
+	public WebElement datePickerCheckIn;
+	
+	@FindBy(xpath = "//label[@title='Check-out date']//..//..//input[@data-datepicker='click']")
+	public WebElement datePickerCheckOut;
 
 }

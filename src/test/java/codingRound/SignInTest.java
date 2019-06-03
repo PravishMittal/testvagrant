@@ -1,58 +1,31 @@
 package codingRound;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
 import cucumber.api.java.en.Given;
+import pageFactory.FlightBookingPage;
+import pageFactory.SignInPage;
 
 public class SignInTest extends CommonFunctions {
 
-	// @Test
-	// public void shouldThrowAnErrorIfSignInDetailsAreMissing() {
+	@Given("^User checks the trip \"([^\"]*)\"$")
+	public void user_checks_the_trip(String errorMessage) throws Throwable {
 
-	// setDriverPath();
-	@Given("^User checks the trip$")
-	public void user_checks_the_trip() throws Throwable {
+		SignInPage sip = PageFactory.initElements(driver, SignInPage.class);
 
-		// driver.get("https://www.cleartrip.com/");
-		waitFor(2000);
+		objClick(sip.lnkYourTrip);
 
-		driver.findElement(By.linkText("Your trips")).click();
-		driver.findElement(By.id("SignIn")).click();
+		objClick(sip.btnSignIn);
 
-		waitFor(5000);
 		driver.switchTo().frame("modal_window");
-		driver.findElement(By.id("signInButton")).click();
+		objClick(sip.btnSignInModalWindow);
 
-		String errors1 = driver.findElement(By.id("errors1")).getText();
-		Assert.assertTrue(errors1.contains("There were errors in your submission"));
+		String errors1 = sip.errorModalWindow.getText();
+		Assert.assertTrue(errors1.contains(errorMessage));
 		printReportStatement("SignIn Error is displayed", "Pass");
-		// driver.quit();
-	}
 
-	private void waitFor(int durationInMilliSeconds) {
-		try {
-			Thread.sleep(durationInMilliSeconds);
-		} catch (InterruptedException e) {
-			e.printStackTrace(); // To change body of catch statement use File | Settings | File Templates.
-		}
 	}
-
-	/*
-	 * private void setDriverPath() {
-	 * 
-	 * 
-	 * if (PlatformUtil.isMac()) { System.setProperty("webdriver.chrome.driver",
-	 * System.getProperty("user.dir")+"chromedriver"); } if
-	 * (PlatformUtil.isWindows()) { System.setProperty("webdriver.chrome.driver",
-	 * System.getProperty("user.dir")+"chromedriver.exe"); } if
-	 * (PlatformUtil.isLinux()) { System.setProperty("webdriver.chrome.driver",
-	 * System.getProperty("user.dir")+"chromedriver_linux"); }
-	 * 
-	 * System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")
-	 * + "\\chromedriver.exe"); ChromeOptions options = new ChromeOptions();
-	 * options.addArguments("--start-maximized", "--disable-extensions"); driver =
-	 * new ChromeDriver(options); }
-	 */
 
 }

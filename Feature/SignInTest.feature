@@ -2,7 +2,11 @@ Feature: Clear Trip Booking
   I want to Sign In on clear trip website
 
   Background: User logs in
-    Given User logins into ClearTrip "https://www.cleartrip.com/"
+    Given User logins into ClearTrip
 
-  Scenario: SignIn Test
-    Given User checks the trip
+  Scenario Outline: SignIn Test
+    Given User checks the trip "<ErrorMessage>"
+    
+    Examples:
+    |ErrorMessage|
+    |There were errors in your submission|

@@ -2,23 +2,23 @@
 <testng-results skipped="0" failed="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="CodingRound" duration-ms="120284" started-at="2019-05-29T14:04:17Z" finished-at="2019-05-29T14:06:17Z">
+  <suite name="CodingRound" duration-ms="105064" started-at="2019-06-03T16:46:44Z" finished-at="2019-06-03T16:48:29Z">
     <groups>
       <group name="cucumber">
         <method signature="TestRunner.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:codingRound.TestRunner@239963d8]" name="feature" class="codingRound.TestRunner"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Regression Test cases" duration-ms="120284" started-at="2019-05-29T14:04:17Z" finished-at="2019-05-29T14:06:17Z">
+    <test name="Regression Test cases" duration-ms="105064" started-at="2019-06-03T16:46:44Z" finished-at="2019-06-03T16:48:29Z">
       <class name="codingRound.TestRunner">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:codingRound.TestRunner@239963d8]" name="setUpClass" is-config="true" duration-ms="780" started-at="2019-05-29T19:34:17Z" finished-at="2019-05-29T19:34:17Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:codingRound.TestRunner@239963d8]" name="setUpClass" is-config="true" duration-ms="826" started-at="2019-06-03T22:16:44Z" finished-at="2019-06-03T22:16:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="abcd()[pri:0, instance:codingRound.TestRunner@239963d8]" name="abcd" is-config="true" duration-ms="5109" started-at="2019-05-29T19:34:18Z" finished-at="2019-05-29T19:34:23Z">
+        <test-method status="PASS" signature="abcd()[pri:0, instance:codingRound.TestRunner@239963d8]" name="abcd" is-config="true" duration-ms="5173" started-at="2019-06-03T22:16:45Z" finished-at="2019-06-03T22:16:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- abcd -->
-        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:codingRound.TestRunner@239963d8]" name="feature" duration-ms="40392" started-at="2019-05-29T19:34:23Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2019-05-29T19:35:03Z">
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:codingRound.TestRunner@239963d8]" name="feature" duration-ms="24177" started-at="2019-06-03T22:16:50Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2019-06-03T22:17:14Z">
           <params>
             <param index="0">
               <value>
@@ -29,7 +29,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:codingRound.TestRunner@239963d8]" name="tearDown" is-config="true" duration-ms="2141" started-at="2019-05-29T19:35:03Z" finished-at="2019-05-29T19:35:05Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:codingRound.TestRunner@239963d8]" name="tearDown" is-config="true" duration-ms="4108" started-at="2019-06-03T22:17:14Z" finished-at="2019-06-03T22:17:18Z">
           <params>
             <param index="0">
               <value>
@@ -40,11 +40,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="abcd()[pri:0, instance:codingRound.TestRunner@239963d8]" name="abcd" is-config="true" duration-ms="4262" started-at="2019-05-29T19:35:05Z" finished-at="2019-05-29T19:35:10Z">
+        <test-method status="PASS" signature="abcd()[pri:0, instance:codingRound.TestRunner@239963d8]" name="abcd" is-config="true" duration-ms="3748" started-at="2019-06-03T22:17:18Z" finished-at="2019-06-03T22:17:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- abcd -->
-        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:codingRound.TestRunner@239963d8]" name="feature" duration-ms="31125" started-at="2019-05-29T19:35:10Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2019-05-29T19:35:41Z">
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:codingRound.TestRunner@239963d8]" name="feature" duration-ms="38143" started-at="2019-06-03T22:17:22Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2019-06-03T22:18:00Z">
           <params>
             <param index="0">
               <value>
@@ -55,7 +55,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:codingRound.TestRunner@239963d8]" name="tearDown" is-config="true" duration-ms="1571" started-at="2019-05-29T19:35:41Z" finished-at="2019-05-29T19:35:42Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:codingRound.TestRunner@239963d8]" name="tearDown" is-config="true" duration-ms="2064" started-at="2019-06-03T22:18:00Z" finished-at="2019-06-03T22:18:02Z">
           <params>
             <param index="0">
               <value>
@@ -66,11 +66,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="abcd()[pri:0, instance:codingRound.TestRunner@239963d8]" name="abcd" is-config="true" duration-ms="3704" started-at="2019-05-29T19:35:42Z" finished-at="2019-05-29T19:35:46Z">
+        <test-method status="PASS" signature="abcd()[pri:0, instance:codingRound.TestRunner@239963d8]" name="abcd" is-config="true" duration-ms="3720" started-at="2019-06-03T22:18:02Z" finished-at="2019-06-03T22:18:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- abcd -->
-        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:codingRound.TestRunner@239963d8]" name="feature" duration-ms="29484" started-at="2019-05-29T19:35:46Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2019-05-29T19:36:15Z">
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:codingRound.TestRunner@239963d8]" name="feature" duration-ms="21267" started-at="2019-06-03T22:18:06Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2019-06-03T22:18:27Z">
           <params>
             <param index="0">
               <value>
@@ -81,7 +81,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:codingRound.TestRunner@239963d8]" name="tearDown" is-config="true" duration-ms="1548" started-at="2019-05-29T19:36:15Z" finished-at="2019-05-29T19:36:17Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:codingRound.TestRunner@239963d8]" name="tearDown" is-config="true" duration-ms="1667" started-at="2019-06-03T22:18:27Z" finished-at="2019-06-03T22:18:29Z">
           <params>
             <param index="0">
               <value>
@@ -92,7 +92,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:codingRound.TestRunner@239963d8]" name="tearDownClass" is-config="true" duration-ms="6" started-at="2019-05-29T19:36:17Z" finished-at="2019-05-29T19:36:17Z">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:codingRound.TestRunner@239963d8]" name="tearDownClass" is-config="true" duration-ms="9" started-at="2019-06-03T22:18:29Z" finished-at="2019-06-03T22:18:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

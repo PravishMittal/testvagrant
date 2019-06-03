@@ -48,14 +48,13 @@ public class TestRunner extends AbstractTestNGCucumberTests {
 		String dateN = formatter.format(currentDate1.getTime()).replace("/", "_");
 		String dateNow = dateN.replace(":", "_");
 		report = new ExtentReports(System.getProperty("user.dir") + "\\Reports\\ExtentReport_" + dateNow + ".html");
-
 	}
 
 	@BeforeMethod()
 	public void abcd() {
 		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "\\chromedriver.exe");
 		ChromeOptions options = new ChromeOptions();
-		options.addArguments("--start-maximized", "--disable-extensions","--disable-notifications");
+		options.addArguments("--start-maximized", "--disable-extensions", "--disable-notifications");
 		driver = new ChromeDriver(options);
 
 	}
